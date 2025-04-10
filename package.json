@@ -1,0 +1,34 @@
+{
+  "name": "create-zapts-app",
+  "version": "1.0.10",
+  "description": "Create a ZapLang project instantly.",
+  "bin": {
+    "create-zapts-app": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "template"
+  ],
+  "keywords": [
+    "zaplang",
+    "create-zap-app",
+    "typescript",
+    "cli"
+  ],
+  "author": "ni4ka",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc && xcopy template dist\\template /E /I /Y",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0"
+  }
+}
