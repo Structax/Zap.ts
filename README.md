@@ -1,6 +1,6 @@
-# create-zapts-app
+# Zap.ts
 
-🚀 **CLI tool to start a ZapLang project in 3 seconds**
+🚀 **CLI tool to start a Zap.ts project in 3 seconds**
 
 This tool is the official starter for instantly setting up an application centered around Zap.ts. It provides a seamless introduction to ZapLang.
 
@@ -96,4 +96,4 @@ MIT
 
 ## Author
 
-ZapBuilder(My-GPT)
+Author: ZapBuilder (My-GPT — trained on the vision of a thousand-year genius 👑)
