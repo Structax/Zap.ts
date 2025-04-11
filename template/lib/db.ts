@@ -1,12 +1,10 @@
 // lib/db.ts（スタブ）
 
-import { useEffect, useState } from "react"
-
-
+import { useEffect, useState } from "react";
 
 // useDB モック（仮データ返却＋リアルタイム風）
-export function useDB(model: string, options: { id: any; realtime?: boolean }) {
-  const [data, setData] = useState<any>(null)
+export function db(model: string, options: { id: any; realtime?: boolean }) {
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
     // 仮のデータ構造
@@ -15,11 +13,20 @@ export function useDB(model: string, options: { id: any; realtime?: boolean }) {
         setData({
           id: options.id,
           title: "ダミータイトル",
-          status: "reviewing" // ← ここを書き換えて guard 状態テスト可
-        })
-      }, 200) // 擬似的ロード時間
+          status: "reviewing", // ← ここを書き換えて guard 状態テスト可
+        });
+      }, 200); // 擬似的ロード時間
     }
-  }, [model, options.id])
+  }, [model, options.id]);
 
-  return data
+  return data;
+}
+
+// update メソッドを追加
+export function update(model: string, options: { id: any; status: string }) {
+  console.log(
+    `Updating ${model} with ID ${options.id} to status ${options.status}`
+  );
+  // 実際の更新処理はここに実装
+  return { success: true };
 }
