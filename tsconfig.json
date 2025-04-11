@@ -1,12 +1,14 @@
-// zap-cli/tsconfig.json
+
 {
   "compilerOptions": {
     "module": "commonjs", // ← これ！！
+    "types": ["node"], // bun-types を使わない明示
     "target": "esnext",
     "outDir": "./dist",
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
   "include": ["src/index.ts"],
+  "exclude": ["dist"],
   "typeRoots": ["./node_modules/@types"]
 }
