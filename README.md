@@ -96,4 +96,10 @@ MIT
 
 ## Author
 
-Author: ZapBuilder (My-GPT — trained on the vision of a thousand-year genius 👑)
+## Author: ZapBuilder (My-GPT — trained on the vision of a thousand-year genius 👑)
+
+## Learn More
+
+- [🧠 ZapLang Philosophy](./docs/philosophy.md)
+- [📘 Full Documentation](https://your-zap-docs.com)
+- [🎬 Demo Video](https://your-demo-video.com)
